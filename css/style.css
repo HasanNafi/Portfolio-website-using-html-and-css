@@ -20,7 +20,7 @@ body {
 
 header {
     background-color: var(--dark);
-    height: 500px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 63% 85%, 0 100%);
 }
 
 .container {
@@ -49,4 +49,37 @@ header nav .left a {
 header nav .left a:hover {
     background-color: var(--primary);
     border-radius: 10px;
+}
+
+.hero {
+    padding: 0.8rem 0 3rem 0;
+}
+
+.hero .hero-left img {
+    width: 260px;
+}
+
+.hero .hero-right {
+    color: var(--pure);
+    margin-top: -4rem;
+}
+
+.hero .hero-right h6 {
+    font-size: 1.6rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+    /* text-transform: uppercase; */
+    letter-spacing: 0.3rem;
+}
+
+.hero .hero-right h1 {
+    line-height: 2.5rem;
+}
+
+.hero .hero-right h1 span {
+    color: var(--primary);
+}
+
+.hero .hero-right p {
+    margin: 1rem 0;
 }
