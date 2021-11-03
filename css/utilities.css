@@ -1,0 +1,33 @@
+.flex {
+    display: flex;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.btn {
+    padding: 7px 8px;
+    font-family: 'Poppins';
+    border-radius: 8px;
+    text-transform: uppercase;
+    border-style: none;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+}
+
+.btn-primary:hover {
+    background-color: transparent;
+    border-color: var(--primary);
+    color: var(--primary);
+}

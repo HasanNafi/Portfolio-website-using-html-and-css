@@ -1,0 +1,52 @@
+@import "utilities.css";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --primary: #3DCFD3;
+    --dark: #161616;
+    --pure: #FFFFFF;
+    --ternary: #898989;
+    --light: #F2F2F2;
+}
+
+header {
+    background-color: var(--dark);
+    height: 500px;
+}
+
+.container {
+    max-width: 952px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+header nav {
+    padding: 1rem 0;
+}
+
+header nav .branding {
+    margin-right: 4rem;
+}
+
+header nav .left a {
+    color: var(--pure);
+    text-decoration: none;
+    margin: 10px 8px;
+    padding: 8px 10px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+header nav .left a:hover {
+    background-color: var(--primary);
+    border-radius: 10px;
+}
