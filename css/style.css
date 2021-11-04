@@ -18,6 +18,9 @@ body {
     --light: #F2F2F2;
 }
 
+
+/* ===============================header start================================ */
+
 header {
     background-color: var(--dark);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 63% 85%, 0 100%);
@@ -83,3 +86,90 @@ header nav .left a:hover {
 .hero .hero-right p {
     margin: 1rem 0;
 }
+
+
+/* ===================================header end=============================== */
+
+
+/* ===================================about section start======================== */
+
+section {
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    /* background: wheat; */
+    border-bottom-right-radius: 20px;
+    /* clip-path: polygon(0 0, 63% 10%, 100% 0, 100% 100%, 0 100%); */
+}
+
+section .about-left img {
+    width: 350px;
+}
+
+section .about-right h1 {
+    font-size: 3rem;
+    margin-bottom: 0.8rem;
+}
+
+section .about-right h1 span {
+    color: var(--primary);
+}
+
+section .about-right h3 {
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+}
+
+section .about-right p {
+    font-family: sans-serif;
+    line-height: 1.5rem;
+}
+
+section .about-right .social-icons {
+    display: flex;
+}
+
+
+/* social icons css design */
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    text-decoration: none;
+    margin: 20px 3px;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+.fa-pinterest {
+    background: #cb2027;
+    color: white;
+}
+
+
+/* ===================================about section end======================== */
