@@ -16,6 +16,7 @@ body {
     --pure: #FFFFFF;
     --ternary: #898989;
     --light: #F2F2F2;
+    --secondary: #070606;
 }
 
 
@@ -96,9 +97,6 @@ header nav .left a:hover {
 section {
     padding-top: 5rem;
     padding-bottom: 3rem;
-    /* background: wheat; */
-    border-bottom-right-radius: 20px;
-    /* clip-path: polygon(0 0, 63% 10%, 100% 0, 100% 100%, 0 100%); */
 }
 
 section .about-left img {
@@ -173,3 +171,94 @@ section .about-right .social-icons {
 
 
 /* ===================================about section end======================== */
+
+
+/* ================================service section start======================== */
+
+.services {
+    background: var(--light);
+}
+
+.service-heading {
+    color: var(--secondary);
+    text-align: center;
+    line-height: 0.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.service-heading span {
+    color: var(--primary);
+}
+
+.service-heading+p {
+    color: var(--ternary);
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.services .card-wrapper {
+    /* display: flex;
+    flex-wrap: wrap; */
+    /* margin-top: 2rem;
+    align-items: center;
+    justify-content: center; */
+    /* OR */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+}
+
+.services .card-wrapper img {
+    color: var(--secondary);
+    background: var(--primary);
+    padding: 1rem;
+    width: 70px;
+    height: 70px;
+    transform: translateY(-50%);
+    border-radius: 20px;
+}
+
+.services .card-wrapper .card {
+    /* width: 250px; */
+    /* height: 250px; */
+    border: 2px solid var(--primary);
+    margin: 1rem;
+    text-align: center;
+    background: var(--dark);
+    color: var(--pure);
+    border-radius: 1rem;
+    transition: all 0.3s ease;
+}
+
+.services .card-wrapper .card:hover {
+    background: var(--pure);
+    color: var(--dark);
+    font-weight: bold;
+}
+
+.services .card-wrapper .card .card-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0.5rem 0 0.5rem;
+    padding: 0 1rem 1rem 1rem;
+}
+
+.services .card-wrapper .card h2 {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.services .card-wrapper .card p {
+    margin-bottom: 0.5rem;
+    font-size: 12px;
+}
+
+
+/* ================================service section end======================== */
