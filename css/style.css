@@ -99,68 +99,60 @@ section {
     padding-bottom: 3rem;
 }
 
-section .about-left img {
+.about-left img {
     width: 350px;
 }
 
-section .about-right h1 {
+.about-right h1 {
     font-size: 3rem;
     margin-bottom: 0.8rem;
 }
 
-section .about-right h1 span {
+.about-right h1 span {
     color: var(--primary);
 }
 
-section .about-right h3 {
+.about-right h3 {
     font-size: 2rem;
     margin-bottom: 0.8rem;
 }
 
-section .about-right p {
+.about-right p {
     font-family: sans-serif;
     line-height: 1.5rem;
 }
 
-section .about-right .social-icons {
+.about-right .social-icons {
     display: flex;
 }
 
 
 /* social icons css design */
 
+.social-icons {
+    margin: 20px 3px;
+}
+
 .fa {
     padding: 20px;
     font-size: 30px;
     width: 55px;
     height: 55px;
-    text-align: center;
+    margin: 0px 3px;
     text-decoration: none;
-    margin: 20px 3px;
     border-radius: 50%;
+    object-fit: cover;
 }
 
 .fa:hover {
     opacity: 0.7;
 }
 
-.fa-facebook {
-    background: #3B5998;
-    color: white;
-}
-
-.fa-twitter {
-    background: #55ACEE;
-    color: white;
-}
-
-.fa-linkedin {
-    background: #007bb5;
-    color: white;
-}
-
+.fa-facebook,
+.fa-twitter,
+.fa-linkedin,
 .fa-instagram {
-    background: #125688;
+    background: #3B5998;
     color: white;
 }
 
@@ -356,3 +348,63 @@ section.reviews .dots li.slick-active button {
 
 
 /* ================================reviews section end======================== */
+
+
+/* ================================works section start======================== */
+
+.works {
+    background: var(--light);
+}
+
+.works .card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+}
+
+.works .card-wrapper .card {
+    position: relative;
+    height: 200px;
+    width: 300px;
+}
+
+.works .card-wrapper .card .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(61, 207, 211, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: var(--dark);
+    opacity: 0;
+    /* opacity:0; means hiding all items inside overlay initialy */
+    transition: all 0.5s ease;
+}
+
+.works .card-wrapper .card:hover .overlay {
+    opacity: 1;
+}
+
+.works .card-wrapper .card .overlay a {
+    text-decoration: none;
+}
+
+.works .card-wrapper .card .overlay a:hover {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 25px;
+    color: white;
+}
+
+.works .card img {
+    width: 100%;
+    height: 100%;
+    /* border-radius: 10px; */
+}
+
+
+/* ================================works section end======================== */
