@@ -408,3 +408,72 @@ section.reviews .dots li.slick-active button {
 
 
 /* ================================works section end======================== */
+
+
+/* ================================Blog section start======================== */
+
+.blog {
+    background: var(--dark);
+    border-radius: 2rem;
+}
+
+.blog .section-heading {
+    color: var(--pure);
+    margin-bottom: 2rem;
+}
+
+.blog .card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+}
+
+.blog .card-wrapper .card {
+    width: 300px;
+    background: var(--pure);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.blog .card-wrapper .img-wrapper img {
+    width: 100%;
+}
+
+.blog .card-wrapper .card-content {
+    padding: 1rem 2rem;
+}
+
+.blog .card-wrapper .card-content h1 {
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.blog .card-wrapper .card-content a {
+    text-decoration: none;
+    color: var(--primary);
+}
+
+.blog .card-wrapper .card-content a:hover {
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.blog .card-wrapper .card-content span {
+    color: var(--ternary);
+    font-size: 0.8rem;
+}
+
+.blog .card-wrapper .card-content p {
+    font-family: 'Lato', sans-serif;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: var(--dark);
+}
+
+.blog .card-wrapper .card-content a.read-more {
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+
+/* ================================blog section end======================== */
