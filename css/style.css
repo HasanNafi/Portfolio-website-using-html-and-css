@@ -177,9 +177,10 @@ section .about-right .social-icons {
 
 .services {
     background: var(--light);
+    padding-bottom: 6rem;
 }
 
-.service-heading {
+.section-heading {
     color: var(--secondary);
     text-align: center;
     line-height: 0.5rem;
@@ -188,11 +189,11 @@ section .about-right .social-icons {
     font-size: 2rem;
 }
 
-.service-heading span {
+.section-heading span {
     color: var(--primary);
 }
 
-.service-heading+p {
+.section-heading+p {
     color: var(--ternary);
     font-family: 'Lato', sans-serif;
     margin-bottom: 3rem;
@@ -262,3 +263,96 @@ section .about-right .social-icons {
 
 
 /* ================================service section end======================== */
+
+
+/* ================================frerlancer section start======================== */
+
+section.freelancer {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/camera.png) no-repeat;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 63% 80%, 0 100%);
+    text-align: center;
+    color: var(--light);
+    padding-bottom: 10rem;
+}
+
+section.freelancer h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+section.freelancer p {
+    margin-bottom: 2rem;
+    font-family: 'Lato', sans-serif;
+}
+
+
+/* ================================freelancer section end======================== */
+
+
+/* ================================reviews section start======================== */
+
+section.reviews .slides .slide img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    /*use for fitting the picture perfectly if its orginal width and height are not same*/
+    margin-bottom: 1rem;
+}
+
+section.reviews .slides .slide {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 17rem;
+}
+
+section.reviews .slides .slide p {
+    font-family: 'Lato', sans-serif;
+    color: var(--dark);
+    margin-bottom: 1rem;
+}
+
+section.reviews .slides .slide span {
+    text-transform: uppercase;
+    color: var(--primary);
+    font-weight: bold;
+}
+
+
+/* slider dots stylesheet from js file */
+
+section.reviews .slider-dots .dots {
+    list-style-type: none;
+    display: flex!important;
+    justify-content: center;
+}
+
+section.reviews .slider-dots {
+    margin-top: 3rem;
+}
+
+section.reviews .slider-dots button {
+    font-size: 0;
+    height: 8px;
+    width: 20px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background: var(--ternary);
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+section.reviews .dots li.slick-active button {
+    background: var(--primary);
+    width: 40px;
+}
+
+
+/* end of dots button style */
+
+
+/* ================================reviews section end======================== */
